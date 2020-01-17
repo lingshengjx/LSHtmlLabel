@@ -39,6 +39,8 @@
     if (self = [super initWithCoder:aDecoder]) {
         //初始化子类
 //        NSLog(@"%s",__func__);
+        self.userInteractionEnabled=YES;
+        self.numberOfLines=0;
         UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick:)];
         [self addGestureRecognizer:tap];
 
